@@ -8,7 +8,7 @@ const searchBtn = document.getElementById('search-btn');
 let APIDATA = {
     url: 'https://pokeapi.co/api/v2/',
     type: 'pokemon',
-    query: 10094,
+    query: n,//10094
 }
 
 function previousPokemon() {
