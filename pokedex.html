@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pokedex.css">
+    <title>Pokedex</title>
+</head>
+
+<body id="body" class="">
+    <article class="pokeballComponents">
+        <section>
+            <div class="TopPokeball">
+                <!--Rechercher un pokemon avec un input-->
+                
+                    <div class="inputs">
+                        <input id="name-input" type="text" placeholder="Name / id"/>
+                        <input id="search-btn" type="submit" value="submit"/>
+                    </div>
+                    <div class="pokemonName"></div>
+                
+            </div>
+        </section>
+        <div class="CenterBall">
+            <div class="circle" onclick="goDown()">
+                <img class="pokeimg" src="" alt="">
+            </div>
+        </div>
+        <section>
+            <div class="BottomPokeball">
+                <div class="buttons">
+                    <button onclick="previousPokemon()">Previous</button>
+                    <button onclick="nextPokemon()">Next</button>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+    <article class="pokeInfos">
+        <div class="pokedexDesignInfos">
+            <div class="leftPokedex">
+                <div class="pokeDecoPokedex">
+                    <div class="colorsDecorationPokedex"></div>
+                    <div class="colorsDecorationPokedex"></div>
+                    <div class="colorsDecorationPokedex"></div>
+                </div>
+                <div class="imagePokemonPokedex">
+                    <img class="pokeimgPokedex" src="" alt="">
+                </div>
+                <div class="navigatePokedex">
+                    <div class="circlePokedexButton" onclick="goUp()"><p>ScrollTop</p></div>
+                    <button onclick="previousPokemon()">Previous Pokemon</button>
+                    <button onclick="nextPokemon()">Next Pokemon</button>
+                </div>
+                <div class="pokemonNameAndIdPokedex">
+                    <div class="pokemonNamePokedex"></div>
+                    <div class="pokemonIdPokedex"></div>
+                </div>
+                
+            </div>
+            <div class="middleLinePokedex">
+                <div class="JoinPokedex">
+                    <div class="JoinInternPokedex"></div>
+                    <div class="JoinInternPokedex"></div>
+                </div>
+                <div class="JoinPokedex">
+                    <div class="JoinInternPokedex"></div>
+                    <div class="JoinInternPokedex"></div>
+                </div>
+            </div>
+            <div class="rightPokedex">
+                <div class="contentInfosPokemonPokedex">
+                    <div class="pokemonTypePokedex colorType"></div>
+                    <div class="pokemonHpPokedex colorRed"></div>
+                    <div class="pokemonWeightPokedex"></div>
+
+                    
+                </div>
+                <div class="contentInfosPokemonPokedex">
+                    <div class="pokemonAttackPokedex"></div>
+                    <div class="UnderLine"></div>
+                    <div class="pokemonDefensePokedex"></div>
+                    <div class="UnderLine"></div>
+                    <div class="pokemonAttackSpePokedex"></div>
+                    <div class="UnderLine"></div>
+                    <div class="pokemonDefenseSpePokedex"></div>
+                    <div class="UnderLine"></div>
+                    <div class="pokemonSpeedPokedex"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+
+    <footer>
+
+    </footer>
+
+
+    <script src="JS/pokedex2.js" type="text/javascript"></script>
+</body>
+
+</html>

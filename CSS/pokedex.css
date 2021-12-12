@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.normal {
+    --top-pokeball: rgb(185, 20, 20);
+    --text-color-And-Bottom-Pokeball: whitesmoke;
+}
+
+.fighting {
+    --top-pokeball: rgb(173, 139, 65);
+    --text-color-And-Bottom-Pokeball: whitesmoke;
+}
+
+.water {
+    --top-pokeball: rgb(20, 97, 185);
+    --text-color-And-Bottom-Pokeball: whitesmoke;
+}
+
+.grass {
+    --top-pokeball: rgb(11, 71, 4);
+    --text-color-And-Bottom-Pokeball: whitesmoke;
+}
+
+.electric {
+    --top-pokeball: rgb(255, 237, 75);
+    --text-color-And-Bottom-Pokeball: rgb(138, 138, 138);
+}
+
+.psychic {
+    --top-pokeball: rgb(124, 0, 103);
+    --text-color-And-Bottom-Pokeball: whitesmoke;
+}
+.poison {
+    --top-pokeball: rgb(102, 22, 139);
+    --text-color-And-Bottom-Pokeball: whitesmoke;
+}
+
+.flying {
+    --top-pokeball: rgb(221, 221, 221);
+    --text-color-And-Bottom-Pokeball: rgb(90, 155, 172);
+}
+
+.ground {
+    --top-pokeball: rgb(66, 48, 8);
+    --text-color-And-Bottom-Pokeball: whitesmoke;
+}
+
+.rock{ 
+    --top-pokeball: rgb(68, 48, 35);
+    --text-color-And-Bottom-Pokeball: whitesmoke;
+}
+
+.bug {
+    --top-pokeball: rgb(48, 114, 65);
+    --text-color-And-Bottom-Pokeball: rgb(223, 223, 223);
+}
+
+.ghost {
+    --top-pokeball: rgb(177, 177, 177);
+    --text-color-And-Bottom-Pokeball: rgb(53, 53, 53);
+}
+
+.steel {
+    --top-pokeball: rgb(143, 143, 143);
+    --text-color-And-Bottom-Pokeball: rgb(255, 255, 255);
+}
+
+.fire {
+    --top-pokeball: rgb(180, 65, 45);
+    --text-color-And-Bottom-Pokeball: rgb(232, 231, 255);
+}
+
+.ice {
+    --top-pokeball: rgb(0, 111, 126);
+    --text-color-And-Bottom-Pokeball: rgb(226, 226, 226);
+}
+
+.dragon{
+    --top-pokeball: rgb(196, 171, 253);
+    --text-color-And-Bottom-Pokeball: rgb(77, 77, 77);
+}
+
+.dark {
+    --top-pokeball: rgb(24, 24, 24);
+    --text-color-And-Bottom-Pokeball: rgb(226, 226, 226);
+}
+
+.fairy {
+    --top-pokeball: rgb(255, 187, 227);
+    --text-color-And-Bottom-Pokeball: rgb(255, 255, 255);
+}
+
+
+body {
+    background-color: var(--top-pokeball);
+}
+
+section {
+    display: grid;
+    place-items: center;
+    height: 45vh;
+}
+
+.TopPokeball {
+    background: var(--top-pokeball);
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs input {
+    background-color: transparent;
+    border: none;
+    border: 2px solid var(--text-color-And-Bottom-Pokeball);
+    padding: 1em 2em;
+    width: 15vw;
+    border-radius: 10px;
+    color: var(--text-color-And-Bottom-Pokeball);
+    text-align: center;
+}
+
+.inputs input::placeholder{
+    color: var(--text-color-And-Bottom-Pokeball);
+}
+
+.pokemonName{
+    font-size: 45px;
+    color: var(--text-color-And-Bottom-Pokeball);
+    font-weight: 600;
+    padding-top: 40px;
+    text-transform: capitalize;
+}
+
+.CenterBall {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+}
+
+.circle {
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 35px solid black;
+    position: relative;
+    bottom: 80px;
+    margin: 0 auto;
+    transition: 0.2s;
+
+}
+
+.circle:hover {
+    background-color: rgb(172, 172, 172);
+    transition: 0.2s;
+}
+
+.pokeimg{
+    width: 80%;
+}
+
+.BottomPokeball {
+    background: var(--text-color-And-Bottom-Pokeball);
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button{
+    background-color: transparent;
+    border: none;
+    border: 2px solid var(--top-pokeball);
+    padding: 1em 2em;
+    width: 25vw;
+    border-radius: 10px;
+    color: var(--top-pokeball);
+    text-align: center;
+}
+
+/* Poke Infos */
+
+.pokeInfos {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color-And-Bottom-Pokeball);
+}
+
+.pokedexDesignInfos{
+    width: 90%;
+    height: 90vH;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Page left Pokedex */
+
+.leftPokedex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 47.5%;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: var(--top-pokeball);
+}
+
+.pokeDecoPokedex{
+    display: none;
+}
+
+.imagePokemonPokedex{
+    background-color: rgb(226, 226, 226);
+    border: 14px solid grey;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagePokemonPokedex img{
+    width: 250px;
+}
+
+.navigatePokedex{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0;
+}
+
+.circlePokedexButton{
+    background-color: rgb(115, 143, 236);
+    height: 60px;
+    padding: 0 8px;
+    border-radius: 25%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all;
+}
+
+.circlePokedexButton:hover{ 
+    filter: saturate(5);
+    transition: 0.5s all;
+}
+
+.navigatePokedex button{
+    border: none;
+    border: 3px solid black;
+    background-color: var(--text-color-And-Bottom-Pokeball);
+    width: 25%;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--top-pokeball);
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.2s all;
+}
+.navigatePokedex button:hover{
+    filter: saturate(10);
+    transition: 0.5s all;
+}
+
+.pokemonNameAndIdPokedex{
+    width: 70%;
+    height: 20%;
+    background-color: rgb(226, 226, 226);
+    border: 8px solid grey;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page left Pokedex */
+/* Page midle Pokedex */
+
+.middleLinePokedex {
+    width: 5%;
+    height: 60%;
+    background-color: var(--top-pokeball);
+    filter: saturate(2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: Auto 0;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.JoinPokedex{
+    width: 100%;
+    height: 8%;
+    filter: grayscale(0.6);
+    background-color: var(--top-pokeball);
+    display: flex;
+    justify-content: space-around;
+}
+
+.JoinInternPokedex{
+    width: 20%;
+    height: 100%;
+    filter: saturate(1.5);
+    background-color: var(--top-pokeball);
+}
+
+/* Page midle Pokedex */
+/* Page right Pokedex */
+
+.rightPokedex{
+    width: 47.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: var(--top-pokeball);
+}
+
+.contentInfosPokemonPokedex{
+    width: 35%;
+    height: 80%;
+    background-color: rgb(226, 226, 226);
+    border: 8px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.UnderLine{
+    height: 1px solid black;
+    width: 50px;
+}
+
+.colorType{
+    color: var(--top-pokeball);
+    text-transform: capitalize;
+}
+
+.colorRed{
+    color: red;
+}
+
+/* Page right Pokedex */
+
+/* Poke Infos */
+
+
+@media screen and (max-width: 700px) {
+    .pokeballComponents{
+        height: 100vh;
+    }
+    section {
+        display: grid;
+        place-items: center;
+        height: 47.5vh;
+    }
+    .inputs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputs input{
+        width: 50vw;
+        margin: 10px 0;
+    }
+    .pokemonName{
+        padding-top: unset;
+        padding: 10px 0 40px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+    .CenterBall {
+        height: 5vh;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .circle {
+        background-color: rgb(221, 221, 221);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 25px solid black;
+        position: relative;
+        bottom: 70px;
+        transition: 0.2s;
+    }
+
+    .buttons button{
+        width: 30vw;
+    }
+
+    /* Pokedex */
+
+    .pokedexDesignInfos{
+        flex-direction: column;
+    }
+
+    .pokeDecoPokedex{
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+        padding: 10px 0;
+    }
+    
+    .colorsDecorationPokedex{
+        background-color: var(--text-color-And-Bottom-Pokeball);
+        width: 7px;
+        height: 7px;
+        
+    }
+    
+    .leftPokedex{
+        width: 90vw;
+        height: 50vh;
+        padding-bottom: 20px;
+    }
+
+    .imagePokemonPokedex{
+        background-color: rgb(226, 226, 226);
+        border: 14px solid grey;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagePokemonPokedex img{
+        width: 140px;
+    }
+
+    .middleLinePokedex {
+        width: 60%;
+        height: 5%;
+        border: none;
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    
+    .JoinPokedex{
+        width: 20%;
+        height: 100%;
+        filter: grayscale(0.6);
+        background-color: var(--top-pokeball);
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .JoinInternPokedex{
+        width: 20%;
+        height: 100%;
+        filter: saturate(1.5);
+        background-color: var(--top-pokeball);
+    }
+
+    .rightPokedex{
+        width: 90vw;
+        height: 40vh;
+    }
+
+
+    /* Pokedex */
+}
